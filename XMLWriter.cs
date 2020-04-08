@@ -51,9 +51,8 @@ namespace CSharp_Recipe_App
         // Given a recipe object, will return a modified string for filename creation
         public string genRecipeName(Recipe recipe){
             char[] invalidFileChars = Path.GetInvalidFileNameChars();
-            string str = recipe.getName();
+            String str = recipe.getName();
             string newStr = str.Trim(invalidFileChars).ToLower();
-            Console.Out.WriteLine(newStr);
             return newStr;
         }
     }
