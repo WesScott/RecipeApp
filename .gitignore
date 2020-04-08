@@ -1,0 +1,5 @@
+CSharp Recipe App.csproj
+
+.vscode/*
+bin/*
+obj/*
