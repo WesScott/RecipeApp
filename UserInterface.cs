@@ -92,7 +92,7 @@ namespace CSharp_Recipe_App
             Console.Out.WriteLine("\nWhat is the name of your first ingredient: ");
             string ing1Name = Console.ReadLine();
 
-            Console.Out.WriteLine("What is the amount of "+ing1Name+"you need?");
+            Console.Out.WriteLine("What is the amount of "+ing1Name+" you need?");
             string readAmt = Console.ReadLine();
             double ing1amt = Convert.ToDouble(readAmt);
 
@@ -101,7 +101,7 @@ namespace CSharp_Recipe_App
 
             ings.Add(new Ingredient(ing1Name,ing1amt,ing1meas));
 
-            int count = 1;
+            int count = 2;
             while(true){
                 Console.Out.WriteLine("\nWhat is the name of ingredient #"+count+"? ");
                 Console.Out.WriteLine("Type 'done' if there are no more ingredients");
@@ -118,6 +118,7 @@ namespace CSharp_Recipe_App
                 string ingMeas = Console.ReadLine();
 
                 ings.Add(new Ingredient(ingName,ingAmt,ingMeas));
+                count++;
             }
             return ings;
         }
